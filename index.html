@@ -461,13 +461,30 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+ <!-- is-hidden -->
+    <!-- Modal -->
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
+                <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close" width="18" height="18">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
+        <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label class="form-label" for="user-name">Ім'я</label>
+          <input class="form-input" type="text" name="user-name" id="user-name">
+          <label class="form-label" for="user-tel">Телефон</label>
+          <input class="form-input" type="tel" name="user-tel" id="user-tel">
+          <label class="form-label" for="user-email">Пошта</label>
+          <input class="form-input" type="email" name="user-email" id="user-email">
+          <label class="form-label" for="comment">Коментар</label>
+          <textarea class="form-textarea" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+          <div class="form-checkbox">
+          <input class="input-checkbox" type="checkbox" name="agreements" id="agreements">
+          <label class="form-checkbox" for="agreements">Погоджуюся з розсилкою та приймаю   <a class="checkbox-link" href=""> Умови договору</a></label></div>
+          <button class="form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
   <script src="./js/modal.js"></script>
