@@ -542,8 +542,7 @@ ul {
   fill: var(--white);
 }
 .footer-subscription {
-  margin-left: 93px;
-  margin-right: auto;
+  margin-left: auto;
 }
 .footer-subscription-title {
   margin-bottom: 20px;
@@ -575,9 +574,10 @@ ul {
   outline-color: 1px solid rgba(255, 255, 255, 0.3);
 }
 .footer-subscription-button {
+  display: flex;
   margin-left: 12px;
-  width: 200px;
-  height: 50px;
+  padding: 10px 28px;
+  max-height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -595,7 +595,9 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.footer-subscription-icon { 
+.footer-subscription-icon {
+  margin-left: 10px;
+  align-self: center;
   fill: var(--white);
 }
 
@@ -861,13 +863,13 @@ transition: var(--main-animation);
   color: var(--accent-color);
 }
 .check-link::after {
+  position: absolute;
   content: "";
   display: block;
   width: 100%;
   height: 1px;
   bottom: 5px;
   background: currentColor;
-  position: absolute;
 }
 .form-btn {
   display: block;
