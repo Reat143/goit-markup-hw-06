@@ -565,6 +565,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  color: var(--white);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -581,7 +582,6 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
   background: var(--accent-color);
@@ -728,7 +728,7 @@ transition: var(--main-animation);
   transform: translate(-50%, -50%);
   padding: 40px;
   width: 528px;
-  height: 581px;
+  max-height: 581px;
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -765,6 +765,7 @@ transition: var(--main-animation);
 }
 .input-wrap {
   position: relative;
+  margin-bottom: 10px;
 }
 .form-label {
   font-weight: 400;
